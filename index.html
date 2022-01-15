@@ -5,13 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- defered JS? -->
+    <style>
+        #output{
+            background-color: grey;
+            height: 600px;
+            border: groove;
+            border-color: grey;
+        } 
+        #playerImage{
+            border: groove;
+            border-color: brown;
+            background-color: burlywood;
+            height: 200px;
+            width: 200px;
+            /* this will be a character image, or otherwise represent the player */
+        }
+    </style>
 </head>
 <body>
     <div id = "output">
+    <!-- this division should have some graphics or other flair -->
     </div>
     <br>
     <input id = "input" type = "text" autofocus></input>
     <button id = "activation_button" onclick = "handle_input();">Activate</button>
-    
+
+<br>
+<div id = "playerImage"></div>
+<br>
+<select name="Select Menu" id="charMenu">
+    <!-- these need to be connected to a menu -->
+    <option value="inventory">Inventory</option>
+    <option value="fight">Fight</option>
+    <option value="magic">Magic</option>
+    <option value="persuasion">Persuasion</option>
+</select>
 </body>
-</html>
+<!-- lowest level js goes here -->
+</html> 
+<!-- track player choices? end of game, give player a class based on use of options? -->
