@@ -1,2 +1,3 @@
 # JS-Browser-Game-Capstone
-Simple game built using JavaScript
+Simple Text RPG game built using JavaScript
+
