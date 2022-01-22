@@ -1,17 +1,17 @@
-// This class will handle player characters
+// // This class will handle player characters
 
 
-class Player {
-    constructor(inventory, hp, location_x, location_y, victory){
-       this.inventory = []
-       this.hp = 100
-       this.location_x = startPosition[0] //or something similar
-       this.location_y = startPosition[1] //or something similar
-       this.victory = false
-    //    this.playerClass = playerClass(); this should be an object that modifies this object I think.git 
-    }
- }
-console.log(Player);
+// class Player {
+//     constructor(inventory, hp, location_x, location_y, victory){
+//        this.inventory = []
+//        this.hp = 100
+//        this.location_x = startPosition[0] //or something similar
+//        this.location_y = startPosition[1] //or something similar
+//        this.victory = false
+//     //    this.playerClass = playerClass(); this should be an object that modifies this object I think.git 
+//     }
+//  }
+// console.log(Player);
 // A generic item class which can be reused for diff. inventory items.
 
 
