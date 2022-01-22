@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- defered JS? -->
     <style>
-        #output{
+        #wallpapers{
             background-color: grey;
             height: 600px;
             border: groove;
@@ -20,12 +20,20 @@
             height: 200px;
             width: 200px;
             /* this will be a character image, or otherwise represent the player */
+            /* move all to stylesheet */
+        }
+        #output{
+            margin-left: auto;
+            background-color: grey;
+            border: groove;
+            height: 300px;
+            width: 500px;
         }
     </style>
 </head>
 <body>
-    <div id = "output">
-    <!-- this division should have some graphics or other flair -->
+    <div id = "wallpapers">
+    <!-- this division should have some graphics or other flair to represent player location-->
     </div>
     <br>
     <input id = "input" type = "text" autofocus></input>
@@ -33,15 +41,20 @@
 
 <br>
 <div id = "playerImage"></div>
+<!-- this div will have an image of the player character -->
+<!-- monsters/npcs will also need a div for their portraits -->
 <br>
+<div id = "output"></div>
+<!-- this div will output based on the player input/game state eg where player is/combat information -->
 <select name="Select Menu" id="charMenu">
-    <!-- these need to be connected to a menu -->
+    <!-- these need to be connected to a menu, maybe turn into a button layout instead of a select for UI purposes -->
     <option value="inventory">Inventory</option>
-    <option value="fight">Fight</option>
+    <!-- <option value="fight">Fight</option> -->
     <option value="magic">Magic</option>
-    <option value="persuasion">Persuasion</option>
+    <!-- <option value="persuasion">Persuasion</option> TBD-->
 </select>
 </body>
 <!-- lowest level js goes here -->
 </html> 
 <!-- track player choices? end of game, give player a class based on use of options? -->
+<!-- main menu/character portrait select -->
