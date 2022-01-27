@@ -65,6 +65,20 @@ class GuardsRoom extends EnemyRoom {
     }
 }
 
+class FindCestusRoom extends LootRoom {
+    constructor(x,y) {
+        super(x, y, new Cestus())
+    }
+
+    introText() {
+        if (this.item.pickedUp) {
+            return "This room is empty, keep moving."
+        } else {
+            return "You notice a small metal object in a pile of refuse. <p> It's a Cestus. You take it and continue onwards.</p>"
+        }
+    }
+}
+
 class StartingCell extends mapTile {
     constructor(x,y) {
         super(x,y)
